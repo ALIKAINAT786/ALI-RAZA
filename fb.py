@@ -51,7 +51,7 @@ file=open('passwords.txt','r')
 email=input('Enter Email/Username : ')
 
 print("\nTarget Email ID : ",email)
-print("\nTrying Passwords from list ...")
+print("\nTrying Password from list ...")
 
 i=0
 while file:
